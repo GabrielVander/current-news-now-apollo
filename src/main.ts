@@ -10,6 +10,6 @@ const server = new ApolloServer({
     playground: environment.apollo.playground,
 });
 
-server.listen().then(({ url }) => {
+server.listen(environment.apollo.port).then(({ url }) => {
     console.log(`Server ready at ${url}`);
 });
