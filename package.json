@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "scripts": {
     "compile": "yarn tsc",
-    "start": " yarn compile && node dist/main.js"
+    "start:dev": "yarn compile && node dist/main.js",
+    "start": "node dist/main.js"
   },
   "main": "index.js",
   "license": "GPL-3.0-or-later",
