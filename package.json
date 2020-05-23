@@ -1,0 +1,22 @@
+{
+  "name": "current-news-now",
+  "version": "1.0.0",
+  "scripts": {
+    "compile": "yarn tsc",
+    "start": " yarn compile && node dist/main.js"
+  },
+  "main": "index.js",
+  "license": "GPL-3.0-or-later",
+  "devDependencies": {
+    "typescript": "^3.9.3"
+  },
+  "dependencies": {
+    "apollo-server": "^2.13.1",
+    "axios": "^0.19.2",
+    "class-validator": "^0.12.2",
+    "currentsapi": "^0.1.0",
+    "graphql": "^15.0.0",
+    "reflect-metadata": "^0.1.13",
+    "type-graphql": "^1.0.0-rc.2"
+  }
+}
