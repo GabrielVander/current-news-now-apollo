@@ -12,10 +12,11 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const type_graphql_1 = require("type-graphql");
 let NewsImpl = (() => {
     let NewsImpl = class NewsImpl {
-        constructor(id, title, image, published, description, category, author) {
+        constructor(id, title, image, url, published, description, category, author) {
             this._id = id;
             this._title = title;
             this._image = image;
+            this._url = url;
             this._published = published;
             this._description = description;
             this._category = category;
@@ -38,6 +39,12 @@ let NewsImpl = (() => {
         }
         set image(value) {
             this._image = value;
+        }
+        get url() {
+            return this._url;
+        }
+        set url(value) {
+            this._url = value;
         }
         get published() {
             return this._published;
@@ -79,6 +86,10 @@ let NewsImpl = (() => {
     __decorate([
         type_graphql_1.Field(),
         __metadata("design:type", String)
+    ], NewsImpl.prototype, "_url", void 0);
+    __decorate([
+        type_graphql_1.Field(),
+        __metadata("design:type", String)
     ], NewsImpl.prototype, "_published", void 0);
     __decorate([
         type_graphql_1.Field(),
@@ -94,7 +105,7 @@ let NewsImpl = (() => {
     ], NewsImpl.prototype, "_author", void 0);
     NewsImpl = __decorate([
         type_graphql_1.ObjectType(),
-        __metadata("design:paramtypes", [String, String, String, String, String, Array, String])
+        __metadata("design:paramtypes", [String, String, String, String, String, String, Array, String])
     ], NewsImpl);
     return NewsImpl;
 })();

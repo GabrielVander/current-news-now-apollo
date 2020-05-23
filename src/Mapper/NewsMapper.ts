@@ -7,6 +7,7 @@ class NewsMapper {
             news.id,
             news.title,
             news.image,
+            news.url,
             news.published,
             news.description,
             news.category,

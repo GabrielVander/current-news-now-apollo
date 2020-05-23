@@ -11,6 +11,7 @@ type NewsImpl {
   _image: String!
   _published: String!
   _title: String!
+  _url: String!
 }
 
 type NewsResultImpl {

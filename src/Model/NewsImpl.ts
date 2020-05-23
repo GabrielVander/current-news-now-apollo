@@ -9,6 +9,8 @@ class NewsImpl implements News {
 
     @Field() private _image: string;
 
+    @Field() private _url: string;
+
     @Field() private _published: string;
 
     @Field() private _description: string;
@@ -17,18 +19,11 @@ class NewsImpl implements News {
 
     @Field() private _author: string;
 
-    constructor(
-        id: string,
-        title: string,
-        image: string,
-        published: string,
-        description: string,
-        category: [string],
-        author: string
-    ) {
+    constructor(id: string, title: string, image: string, url: string, published: string, description: string, category: [string], author: string) {
         this._id = id;
         this._title = title;
         this._image = image;
+        this._url = url;
         this._published = published;
         this._description = description;
         this._category = category;
@@ -57,6 +52,14 @@ class NewsImpl implements News {
 
     set image(value: string) {
         this._image = value;
+    }
+
+    get url(): string {
+        return this._url;
+    }
+
+    set url(value: string) {
+        this._url = value;
     }
 
     get published(): string {
