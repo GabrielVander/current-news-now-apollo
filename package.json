@@ -1,5 +1,5 @@
 {
-  "name": "current-news-now",
+  "name": "current-news-now-apollo",
   "version": "1.0.0",
   "scripts": {
     "compile": "yarn tsc",
