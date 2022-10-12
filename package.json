@@ -12,7 +12,7 @@
     "typescript": "^3.9.3"
   },
   "dependencies": {
-    "apollo-server": "^2.13.1",
+    "apollo-server": "^2.25.4",
     "axios": "^0.19.2",
     "class-validator": "^0.12.2",
     "currentsapi": "^0.1.0",
